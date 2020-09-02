@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<!--[if lte IE 6]><html class="preIE7 preIE8 preIE9"><![endif]-->
+<!--[if IE 7]><html class="preIE8 preIE9"><![endif]-->
+<!--[if IE 8]><html class="preIE9"><![endif]-->
+<!--[if gte IE 9]><!--><html lang="en"><!--<![endif]-->
+  <head>
+
+      <meta charset="UTF-8">
+
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+	  <meta name="author" content="Beula">
+
+	  <meta name="description" content="Cheese cake">
+
+	  <meta name="keywords" content="Birthday">
+	  <!-- <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon"> -->
+
+	  <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+	  <link href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+	 <!--  <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/blitzer/theme.min.css" /> -->
+
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	  <link rel="stylesheet" href="css/style.css">
+
+	  <title>CheeseCake</title>
+
+  </head>
+
+  <body>
+
+    <div class="notice">
+      <h1> Please increase the screen size to make Cheese cake. </h1>
+        <h2> Kitchen is too small </h2>
+
+    </div>
+
+	 <h1>
+
+	  Let's make a Chocolate Cheese cake for this Christmas, My dear!
+	</h1>
+  	<div class="container">
+
+      <!-- step1-->
+      <div class="row step1">
+
+
+
+        <div class="col-3">
+          <div class="row" >
+            <div class="col">
+                <div class="btn btn-lg step1Btn"> Step 1</div>
+            </div>
+          </div>
+
+          <div class="row" >
+            <div class="col">
+                <div class="btn btn-lg step1Btn">
+                  <h3>For Best effects</h3>
+
+                  <p> 1. Drag the ingredients one by one to the cake tin </p>
+                  <p> 2. Then click on the buttons one by one </p>
+
+
+                </div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+        <div class="col-6">
+
+          <div class="row">
+
+          <div class="col-4">
+            <div class="cards">
+
+              <div class="card-header">
+                <h3> Biscuits</h3>
+              </div>
+
+              <div  id="draggableBis" class="card-body ui-widget-content">
+                <img id="biscuits" src="images/biscuits.jpg" class="img-thumbnail" title="drag me to the cake tin"/>
+              </div>
+
+              <div class="card-footer">
+                <h4> 150g digestive biscuits / short bread</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="cards">
+
+              <div class="card-header">
+                <h3> Butter</h3>
+              </div>
+
+              <div  id="draggableBut" class="card-body ui-widget-content">
+                <img id="butter" src="images/butter.jpg" class="img-thumbnail" title="drag me to the cake tin"/>
+              </div>
+
+              <div class="card-footer">
+                <h4> 45g melted butter</h4>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-4">
+            <div class="cards">
+
+              <div class="card-header">
+                <h3> Sugar</h3>
+              </div>
+
+              <div  id="draggableSug" class="card-body ui-widget-content">
+                <img id="sugar" src="images/sugar.jpg" class="img-thumbnail" title="drag me to the cake tin"/>
+              </div>
+
+              <div class="card-footer">
+                <h4> a table spoon from 110 g caster sugar </h4>
+              </div>
+            </div>
+          </div>
+
+          </div>
+
+          <div class="row processBtns">
+          <div class="row">
+            <div class="col">
+              <button id="pressTin" class="btn btn-lg btn-success processBtn1"> Press into an 18cm cake tin </button>
+            </div>
+
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <button id="fridgeBtn" class="btn btn-lg btn-success processBtn1"> Refrigerate. </button>
+            </div>
+          </div>
+        </div>
+
+        </div> <!-- col 6 -->
+
+
+
+
+
+
+
+        <div class="col-3">
+
+          <div class="row">
+
+              <div  id="droppable1" class="col ui-widget-header">
+              <img  id="tin" src="images/tin.jpg" class="img-thumbnail" />
+              </div>
+
+          </div>
+
+
+          <div class="row" >
+            <div class="col">
+                <img id="fridge" src="images/fridge.jpg" class="img-thumbnail" />
+            </div>
+          </div>
+
+
+          <!-- 	 <img src="http://allrecipes.com.au/video/5367770777001/no-bake-chocolate-cheesecake" class="img-thumbnail" />  -->
+
+              <!-- http://allrecipes.com.au/video/5367770777001/no-bake-chocolate-cheesecake -->
+
+
+
+            <!-- 	<iframe width="200" height="200" src="http://allrecipes.com.au/video/5367770777001/no-bake-chocolate-cheesecake" frameborder="0" ></iframe>  -->
+
+
+            <!-- <video width="200" height="200" autoplay>
+            <source src="http://allrecipes.com.au/video/5367770777001/no-bake-chocolate-cheesecake" >
+
+          </video> -->
+
+
+
+        </div> <!-- col 3 -->
+
+      </div> <!-- step1 ENDS-->
+
+      <!-- step2-->
+      <div class="row step2">
+
+
+
+            <div class="col-3">
+              <div class="row" >
+                <div class="col">
+                    <div class="btn btn-lg step2Btn"> Step 2</div>
+                </div>
+              </div>
+
+              <div class="row" >
+                <div class="col">
+                    <div class="btn btn-lg step2Btn">
+                      <h3>For Best effects</h3>
+
+                      <p> 1. Drag the ingredients one by one to the cake tin </p>
+                      <p> 2. Then click on the buttons one by one </p>
+
+
+
+
+
+                    </div>
+                </div>
+              </div>
+
+            </div>
+
+
+
+            <div class="col-6">
+
+              <div class="row">
+
+              <div class="col-4">
+                <div class="cards cards2">
+
+                  <div class="card-header">
+                    <h3> Cream </h3>
+                  </div>
+
+                  <div  id="draggableCream" class="card-body ui-widget-content">
+                    <img id="cream" src="images/whippedcream.webp" class="img-thumbnail" title="drag me to the bowl"/>
+                  </div>
+
+                  <div class="card-footer">
+                    <h4> Whip 120ml thickened cream until soft peak stage</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="cards cards2">
+
+                  <div class="card-header">
+                    <h3> Chocolate</h3>
+                  </div>
+
+                  <div  id="draggableChoc" class="card-body ui-widget-content">
+                    <img id="chocolate" src="images/meltedchocolate.jpg" class="img-thumbnail" title="drag me to the bowl"/>
+                  </div>
+
+                  <div class="card-footer">
+                    <h4> 150g dark chocolate melted and cooled</h4>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-4">
+                <div class="cards cards2">
+
+                  <div class="card-header">
+                    <h3> Cocoa Mix</h3>
+                  </div>
+
+                  <div  id="draggableCocoa" class="card-body ui-widget-content">
+                    <img id="cocoa" src="images/cocoawater.jpg" class="img-thumbnail" title="drag me to the bowl"/>
+                  </div>
+
+                  <div class="card-footer">
+                    <h4> 2 tablespoons mixed with a little hot water </h4>
+                  </div>
+                </div>
+              </div>
+
+              </div>
+
+              <div class="row processBtns">
+              <div class="row">
+                <div class="col">
+                  <button id="blendWell" class="btn btn-lg btn-success processBtn2"> Blend well </button>
+                </div>
+
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <button id="setAside" class="btn btn-lg btn-success processBtn2"> Set aside </button>
+                </div>
+              </div>
+            </div>
+
+            </div> <!-- col 6 -->
+
+
+
+
+
+
+
+            <div class="col-3">
+
+              <div class="row">
+
+                  <div  id="droppable2" class="col ui-widget-header">
+                  <img  id="blend" src="images/bowl.jpg" class="img-thumbnail" />
+                  </div>
+
+              </div>
+
+
+              <div class="row" >
+                <div class="col">
+                    <img id="table" src="images/table.jpg" class="img-thumbnail" />
+                </div>
+              </div>
+
+
+              <!--   <img src="http://allrecipes.com.au/video/5367770777001/no-bake-chocolate-cheesecake" class="img-thumbnail" />  -->
+
+                  <!-- http://allrecipes.com.au/video/5367770777001/no-bake-chocolate-cheesecake -->
+
+
+
+                <!--   <iframe width="200" height="200" src="http://allrecipes.com.au/video/5367770777001/no-bake-chocolate-cheesecake" frameborder="0" ></iframe>  -->
+
+
+                <!-- <video width="200" height="200" autoplay>
+                <source src="http://allrecipes.com.au/video/5367770777001/no-bake-chocolate-cheesecake" >
+
+              </video> -->
+
+
+
+            </div> <!-- col 3 -->
+
+      </div> <!-- step2 ENDS-->
+
+      <!-- STEP 3-->
+      <div class="row step3">
+
+
+
+      <div class="col-3">
+        <div class="row" >
+          <div class="col">
+              <div class="btn btn-lg step3Btn"> Step 3</div>
+          </div>
+        </div>
+
+        <div class="row" >
+          <div class="col">
+              <div class="btn btn-lg step3Btn">
+                <h3>For Best effects</h3>
+                <p> 1. Drag the ingredients one by one to the cake tin </p>
+                <p> 2. Then click on the buttons one by one </p>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6">
+
+        <div class="row">
+
+        <div class="col-4">
+          <div class="cards">
+
+            <div class="card-header">
+              <h3> Cream cheese</h3>
+            </div>
+
+            <div  id="beatableCream" class="card-body ui-widget-content">
+              <img id="beatcream" src="images/whippedcream.webp" class="img-thumbnail" title="drag me to the bowl"/>
+            </div>
+
+            <div class="card-footer">
+              <h4> Beat the 200g cream cheese</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="cards">
+
+            <div class="card-header">
+              <h3> Sugar</h3>
+            </div>
+
+            <div  id="mixableSugar" class="card-body ui-widget-content">
+              <img id="mixSugar" src="images/meltedchocolate.jpg" class="img-thumbnail" title="drag me to the bowl"/>
+            </div>
+
+            <div class="card-footer">
+              <h4>Beat the remaining caster sugar of 110 g together with cream cheese </h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <div class="cards ">
+
+            <div class="card-header">
+              <h3> Cream& Chocolate Mix</h3>
+            </div>
+
+            <div  id="mixture" class="card-body ui-widget-content">
+              <img id="mix" src="images/cocoawater.jpg" class="img-thumbnail" title="drag me to the bowl"/>
+            </div>
+
+            <div class="card-footer">
+              <h4>    Fold in cream/chocolate mixture from previous step  and mix thoroughly </h4>
+            </div>
+          </div>
+        </div>
+
+        </div>
+
+        <div class="row processBtns">
+        <div class="row">
+          <div class="col">
+            <button id="Spread" class="btn btn-lg btn-success processBtn3">
+          Spread into the cake tin on top of crushed biscuits
+          </button>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <button id="freeze" class="btn btn-lg btn-success processBtn3">
+            Freeze for one hour </button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <button id="refrigerate" class="btn btn-lg btn-success processBtn3">
+            Refrigerate for 30 minutes </button>
+          </div>
+        </div>
+      </div>
+
+      </div> <!-- col 6 -->
+
+
+      <div class="col-3">
+
+         <div class="row">
+
+            <div  id="droppable2" class="col ui-widget-header">
+             <!-- <img  id="blend" src="images/bowl.jpg" class="img-thumbnail" /> -->
+            </div>
+
+        </div>
+
+
+        <div class="row" >
+          <div class="col">
+               <!-- <img id="table" src="images/table.jpg" class="img-thumbnail" />  -->
+          </div>
+        </div>
+
+
+        <!--   <img src="http://allrecipes.com.au/video/5367770777001/no-bake-chocolate-cheesecake" class="img-thumbnail" />  -->
+
+            <!-- http://allrecipes.com.au/video/5367770777001/no-bake-chocolate-cheesecake -->
+
+
+
+           <!--   <iframe width="200" height="200" src="http://allrecipes.com.au/video/5367770777001/no-bake-chocolate-cheesecake" frameborder="0" ></iframe>  -->
+
+
+          <!-- <video width="200" height="200" autoplay>
+          <source src="http://allrecipes.com.au/video/5367770777001/no-bake-chocolate-cheesecake" >
+
+        </video> -->
+
+
+
+      </div> <!-- col 3 -->
+
+     </div> <!-- step3 -->
+
+  </div> <!-- container -->
+
+     <div class="final">
+      <div class="servecake">
+       <button class="btn btn-info serve"> Serve cake </button>
+      </div>
+      <div class="cakeDiv">
+        <img class="img-thumbnail cake" src="images/cake.jpg" alt="" >
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3CWJNqyub3o?autoplay=1" frameborder="0" allow="accelerometer;  encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- <a href="https://www.youtube.com/watch?v=KzV_UCQFY6w">Feliz Navidad </a> -->
+        <!-- <iframe width="200" height="200" src="http://allrecipes.com.au/video/5367770777001/no-bake-chocolate-cheesecake" frameborder="0" ></iframe> -->
+      </div>
+
+     </div>
+  <!-- <a href="https://www.youtube.com/watch?v=KzV_UCQFY6w">Feliz Navidad </a> -->
+
+  <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/KzV_UCQFY6w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+<!-- <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/ihW56Xa3XGQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+     <!-- <audio controls>
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+            https://www.youtube.com/watch?v=KzV_UCQFY6w
+     </audio> -->
+
+	 <script
+	  src="https://code.jquery.com/jquery-3.4.1.min.js"
+	  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+	  crossorigin="anonymous"></script>
+
+
+
+
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+	  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	  <script
+  src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"
+  integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E="
+  crossorigin="anonymous"></script>
+
+
+      <script src="js/script.js"></script>
+
+  </body>
+</html>
